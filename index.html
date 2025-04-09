@@ -6,27 +6,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- إضافة انترو ترحيبي -->
+  <div id="intro" class="intro">
+    <p>أهلاً وسهلاً بك في متجر Maym! استمتع بتسوقك.</p>
+  </div>
+
   <header>
-    <div class="logo-title">
-      <img src="logo.png" alt="شعار Maym" class="logo">
-      <h1>متجر Maym 🛍️</h1>
-    </div>
+    <!-- إضافة شعار Maym كصورة -->
+    <img src="https://github.com/yourusername/maym-store/raw/main/{2444C105-6B1A-4E88-ADD1-311924D42E4E}.png" alt="Maym Logo" class="logo">
     <button onclick="checkout()">🛒 الدفع</button>
   </header>
+
+  <!-- الرسائل التي تظهر أعلى الصفحة -->
+  <div id="message" class="message"></div>
 
   <section id="products">
     <!-- Product 1: هودي -->
     <div class="product">
       <h2>هودي</h2>
       <p>$5.00</p>
-      <button onclick="addToCart('هودي', 5.00)">أضف إلى السلة</button>
+      <!-- إضافة اختيار الكمية -->
+      <label for="quantity1">العدد:</label>
+      <input type="number" id="quantity1" value="1" min="1" class="quantity-input">
+      <button onclick="addToCart('هودي', 5.00, document.getElementById('quantity1').value)">أضف إلى السلة</button>
     </div>
 
     <!-- Product 2: كنزة كم طويل -->
     <div class="product">
       <h2>كنزة كم طويل</h2>
       <p>$4.00</p>
-      <button onclick="addToCart('كنزة كم طويل', 4.00)">أضف إلى السلة</button>
+      <!-- إضافة اختيار الكمية -->
+      <label for="quantity2">العدد:</label>
+      <input type="number" id="quantity2" value="1" min="1" class="quantity-input">
+      <button onclick="addToCart('كنزة كم طويل', 4.00, document.getElementById('quantity2').value)">أضف إلى السلة</button>
     </div>
   </section>
 
