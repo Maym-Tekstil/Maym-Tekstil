@@ -60,10 +60,15 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.logo {
-  width: 180px;
+/* تنسيق اسم المتجر */
+.store-name {
+  font-size: 30px; /* حجم الخط */
+  color: #FFD700;  /* اللون الذهبي */
+  font-weight: bold; /* خط عريض */
+  margin: 0;
 }
 
+/* الأزرار */
 button {
   background-color: #FFD700;
   color: #000;
